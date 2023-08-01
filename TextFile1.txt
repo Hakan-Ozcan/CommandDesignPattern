@@ -1,0 +1,19 @@
+﻿Command Design Pattern (Komut Tasarım Deseni), davranışsal bir tasarım desenidir ve istemci,
+bir eylemi gerçekleştiren işlemleri içeren nesnelerin bir koleksiyonunu yönetir.
+Bu desen, işlemleri nesneler aracılığıyla sarmalayarak istemci kodu ve işlemi gerçekleştiren nesneler arasındaki bağı gevşetir.
+Bu sayede, istemci, farklı işlemleri etkileşimli olarak yönetebilir ve yeni işlemler eklemek daha kolay olur.
+
+Temel kavramlar:
+
+Komut (Command): Gerçekleştirilecek bir işlemi temsil eden bir arabirimdir. Bu arabirim genellikle bir "execute()" metodu içerir.
+
+Alıcı (Receiver): Bir işlemin gerçekten nasıl gerçekleştirileceğini bilen nesnedir.
+
+İstemci (Client): Komutları oluşturan ve kullanıcıdan gelen talepleri işleyen nesnedir.
+
+İstekçi (Invoker): Komutların çalıştırılmasını ve geri alınmasını yöneten nesnedir.
+
+Şimdi, C# dilinde bir kompleks örnek verelim:
+
+Örnek Senaryo: Bir metin editöründe, kullanıcının yazdığı metni düzenleyebileceğimiz bir komut işlemi oluşturacağız.
+Kullanıcının yaptığı her düzenlemeyi bir komut olarak kaydedecek ve geri alabilmeyi sağlayacağız.
